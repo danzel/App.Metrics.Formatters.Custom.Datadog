@@ -4,6 +4,8 @@
     <TargetFramework>netstandard1.6</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Version>2.0.0-alpha</Version>
+    <PackageProjectUrl>https://github.com/danzel/App.Metrics.Formatters.Custom.Datadog</PackageProjectUrl>
+    <Description>Contains a formatter for sending data to Datadog via their https API</Description>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
