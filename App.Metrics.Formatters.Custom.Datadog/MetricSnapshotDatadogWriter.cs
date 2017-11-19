@@ -131,7 +131,6 @@ namespace App.Metrics.Formatters.Custom.Datadog
 
 		private void Flush()
 		{
-			File.WriteAllText("out.txt", JsonConvert.SerializeObject(new SeriesJson { Series = _metrics.ToArray() }, JsonSettings));
 			_streamWriter.Write(JsonConvert.SerializeObject(new SeriesJson { Series = _metrics.ToArray() }, JsonSettings));
 		}
 
